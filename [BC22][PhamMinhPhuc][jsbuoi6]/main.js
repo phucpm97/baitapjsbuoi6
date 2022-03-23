@@ -1,14 +1,3 @@
-// var a = 0
-// while (a < 5) {
-//     console.log("hello");
-//     a++;
-
-// }
-
-// for (var i = 0; i < 5; i++) {
-//     console.log("Hello Cybersoft");
-// }
-
 // 1. Tìm số nguyên dương nhỏ nhất sao cho:
 // 1 + 2 + … + n > 10000
 document.getElementById("btnSomin").onclick = function() {
@@ -62,7 +51,7 @@ document.getElementById("btnSubmit2").onclick = function() {
 // background màu xanh
 
 document.getElementById('btnSubmit3').onclick = function() {
-    var userList = ["một", "hai", "ba", "bốn", "năm"];
+    var userList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
     // var content1 = ""
     // var content2 = "";
     var content = "";
@@ -71,16 +60,17 @@ document.getElementById('btnSubmit3').onclick = function() {
 
     for (var i = 0; i < userList.length; i++) {
         if (i % 2 === 0) {
-            //chan   
-            // content += "<tr> Div " + userList[i] + " lẻ" + "</tr>";
-            content += "<tr class='div__blue'>example</tr>";
-            // document.getElementById("KQLe").innerHTML = content1;
+            //le  
+            content += "<div class='div__blue'> Div " + " lẻ " + userList[i] + "</div>";
+
+
+
         } else {
-            //le
-            // content += "<tr> Div " + userList[i] + " chẵn" + "</tr>";
-            content += "<tr class='div__red'>example</tr>";
-            // document.getElementById("KQChan").innerHTML = content2;
+            //chan
+            content += "<div class='div__red'> Div " + " chẵn " + userList[i] + "</div>";
+
         }
+
         document.getElementById("KQso").innerHTML = content;
     }
 };
